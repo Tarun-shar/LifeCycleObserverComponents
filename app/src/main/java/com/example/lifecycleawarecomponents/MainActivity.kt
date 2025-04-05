@@ -1,11 +1,14 @@
 package com.example.lifecycleawarecomponents
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.lifecycleawarecomponents.ViewModelConcept.MainActivity2
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +36,11 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d("checkLog", "onDestroy: Activity")
+    }
+
+    fun Navigate(view: View) {
+        val intent = Intent(this, MainActivity2::class.java)
+        startActivity(intent)
     }
 
 }
