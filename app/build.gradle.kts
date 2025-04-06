@@ -54,4 +54,7 @@ dependencies {
 
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+
+    // LiveData Dependency
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 }

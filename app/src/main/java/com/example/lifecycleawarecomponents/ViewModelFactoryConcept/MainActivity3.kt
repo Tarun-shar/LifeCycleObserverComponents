@@ -1,13 +1,12 @@
-package com.example.lifecycleawarecomponents.ViewModelFactory
+package com.example.lifecycleawarecomponents.ViewModelFactoryConcept
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
-import com.example.lifecycleawarecomponents.R
+import com.example.lifecycleawarecomponents.LiveDataConcept.MainActivity4
 import com.example.lifecycleawarecomponents.databinding.ActivityMain3Binding
 
 class MainActivity3 : AppCompatActivity() {
@@ -34,5 +33,10 @@ class MainActivity3 : AppCompatActivity() {
     fun Increment(view: View) {
         viewModelForFactory.increment()
         setText()
+    }
+
+    fun goActivity4(view: View) {
+        val intent = Intent(this, MainActivity4::class.java)
+        startActivity(intent)
     }
 }

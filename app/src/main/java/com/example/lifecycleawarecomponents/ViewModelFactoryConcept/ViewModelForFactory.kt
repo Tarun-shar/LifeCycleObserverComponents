@@ -1,4 +1,4 @@
-package com.example.lifecycleawarecomponents.ViewModelFactory
+package com.example.lifecycleawarecomponents.ViewModelFactoryConcept
 
 import androidx.lifecycle.ViewModel
 

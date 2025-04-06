@@ -3,13 +3,9 @@ package com.example.lifecycleawarecomponents.ViewModelConcept
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
-import com.example.lifecycleawarecomponents.R
-import com.example.lifecycleawarecomponents.ViewModelFactory.MainActivity3
+import com.example.lifecycleawarecomponents.ViewModelFactoryConcept.MainActivity3
 import com.example.lifecycleawarecomponents.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {
