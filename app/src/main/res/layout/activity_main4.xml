@@ -36,4 +36,13 @@
         android:textSize="24sp"
         android:layout_marginTop="20dp"
         />
+
+    <Button
+        android:onClick="goActivity5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Activity 5"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        />
 </LinearLayout>
